@@ -10,7 +10,13 @@ Date:   01/03/2022
 """
 
 import introcs
-APIKEY = ''
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+APIKEY = os.getenv('APIKEY')
 
 
 def before_space(s):
